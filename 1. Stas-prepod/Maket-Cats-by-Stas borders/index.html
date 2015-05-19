@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example company</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="page">
+	<header class="header action_border">
+			<div class="main_container action_border">
+				<a href="#" id="logo" class="action_border"></a>
+				<nav class="navigation action_border">
+					<a href="#" class="navigation_link">Home</a>
+					<a href="#" class="navigation_link">About</a>
+					<a href="#" class="navigation_link">Services</a>
+					<a href="#" class="navigation_link">Portfolio</a>
+					<a href="#" class="navigation_link">Contacts </a>
+				</nav>
+			</div>
+	</header>
+	<main class="main_container posts action_border">
+		<article class="post action_border">
+			<div class="left_column action_border">
+				<img class="post_img" src="images/cat_1.jpg" alt="Title post" />
+				<div class="post_img_footer"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></div>
+			</div>
+			<div class="right_column action_border">
+				<h3>Lorem Ipsum</h3>
+				<div class="post_description">
+				<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
+				<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
+
+				</div>
+			</div>
+		</article>
+		<article class="post action_border">
+			<div class="left_column action_border">
+				<img class="post_img" src="images/cat_2.jpg" alt="Title post" />
+				<div class="post_img_footer"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></div>
+			</div>
+			<div class="right_column action_border">
+				<h3>Lorem Ipsum</h3>
+				<div class="post_description">
+				<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
+				<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
+
+				</div>
+			</div>
+		</article>
+		<article class="post action_border">
+			<div class="left_column action_border">
+				<img class="post_img" src="images/cat_3.jpg" alt="Title post" />
+				<div class="post_img_footer"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></div>
+			</div>
+			<div class="right_column action_border">
+				<h3>Lorem Ipsum</h3>
+				<div class="post_description">
+				<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
+				<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
+
+				</div>
+			</div>
+		</article>
+		<button id="action_button" class="action_button">Показать границы</button>
+	</main>
+	<footer class="footer action_border">
+		© My Company, 2015
+	</footer>
+	<script>
+		(function(){
+				var posts = document.body.querySelector('.posts'),
+				elements =  document.body.querySelectorAll('.action_border'),
+				elements_len = elements.length,
+				button = posts.querySelector('#action_button');
+				
+				button.addEventListener('click', showBorder, false );
+				
+				function showBorder(){
+					for(var i = 0; i < elements_len; i++){
+						elements[i].classList.add("show_border");
+					}
+				}
+		})();
+	</script>
+</div>
+</body>
+</html>
