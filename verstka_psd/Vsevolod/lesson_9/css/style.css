@@ -1,0 +1,581 @@
+/************************ css reset ******************************/
+* { 
+	margin: 0; 
+	padding: 0; 
+	outline: 0; 
+}
+/************************ common styles ******************************/
+@import "http://webfonts.ru/import/permian.css";
+/************************ PermianSerifTypeface ******************************/
+body {
+	background: #f8f8f8;
+	font-family: Georgia;
+	font-size: 12px;
+	text-shadow: 0px 0px 1px #aaa;
+	max-width: 1840px;
+}
+a {
+	color: #0099cc;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5 {
+	font-family: PermianSerifTypeface;
+}
+.main_container {
+	margin: 0 auto;  
+	max-width: 980px;
+}   	
+.main_container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.horizontal {
+	display: inline-block;
+}
+/************************ auth ******************************/
+.auth_area {
+	padding: 6px 0;
+	background: #ececec;
+}
+.auth_menu {
+	float:right;
+	margin-right: 112px;
+}
+.link {
+	border-bottom: 1px solid #b4b4b4;
+	text-decoration: none;
+	font-size: 11px;
+	color: #515151;
+}
+.auth_menu  .link {
+	margin-left: 10px;
+}
+.lang_menu {
+	float:right;
+}
+.lang_menu  .link {
+	margin-left: 2px;
+	padding: 2px;
+}
+.lang_menu  .switched-on {
+	background: #72add2;
+	color: #fff;
+	border-bottom: none;
+}
+/************************ header ******************************/
+.header_area {
+	padding: 35px 0 20px 0;
+	background: fbfbfb;
+}
+.header_logo_block_pic {    
+    width: 186px; 
+    height: 82px;
+	display: block;
+	background: url(../images/logo_forum_texted.png) no-repeat 0 0;
+	float: left; 
+}
+.header_info_caption {
+	display: inline-block;
+	float: right;
+	font-size: 11px;
+	font-style: italic;
+	line-height: 18px;
+	text-align: right;
+	color: #515151;
+}
+.comment {
+	color: #999999;
+}
+.header_info_phone {
+	display: inline-block;
+	float: right;
+	font-family: PermianSerifTypeface;
+	font-size: 37px;
+	line-height: 37px;
+	color: #6699cc;
+	margin: 0 35px 0 8px;
+	
+}
+.header_menu {
+	float: right;
+	margin-top: 40px;
+}
+.nav_butt {
+	font-family: PermianSerifTypeface;
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-right: 27px;
+}
+.nav_butt:last-child {
+	margin-right: 0px;
+}
+.header .active {
+	color: #56a7d4;
+}
+.header_menu_subline{
+	background: #666666;
+	height: 35px;
+	border-top: 1px solid #000000;
+}
+/************************ jumbo ******************************/
+.jumbo_area {
+	background: url(../images/jumbo_01.gif) no-repeat center;
+	font-family: PermianSerifTypeface;
+}
+.jumbo {
+	height: 370px;
+}
+.jumbo_headline {
+	float: left;
+	font-size: 16px;
+	color: #000000;
+	max-width: 550px;
+	width: 70%;
+	min-width: 315px;
+	text-transform: uppercase;
+	margin-top: 65px;
+}
+.jumbo_host {
+	float: right;
+	height: 327px;
+	width: 297px;
+	font-size: 13px;
+	background: url(../images/host_forum.png) no-repeat right bottom;
+	margin-top: 20px;
+}
+.jumbo_host_column {
+	float: right;
+	width: 125px;
+	margin-top: 20px;
+	padding-right: 0px;
+}
+.jumbo_host_person {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.jumbo_host_person_title {
+	font-size: 11px;
+	color: #999999;
+}
+.jumbo_host_speach {
+	float: right;
+	margin-top: 90px;
+	line-height: 18px;
+	font-size: 11px;
+	padding-right: 20px;
+	padding-left: 15px;
+}
+.jumbo_host_speach  a {
+	color: #0099cc;
+	text-decoration: underline;
+}
+.jumbo_host_person .host_name {
+	font-size: 20px;
+}
+/*************************** main content ***************************/
+.main_area {
+	background: #f8f8f8;
+	color: #666666;
+}
+.main_wide_block {
+	float: left;
+	min-width: 315px;
+	max-width: 660px;
+}
+.main_narrow_block {
+	float: right;
+	width: 315px;
+}
+.chapter {
+	min-height: 280px;
+	margin: 25px 0 25px 0;
+}
+.chapter:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.chapter_name {
+	font-size: 20px;
+	text-align: left;
+	margin: 0px 0px 0px 5px;
+}
+.iconical {
+	padding:0px 0px 0px 30px;	
+}
+.facebook {
+	background: url("../images/icon_fb.gif") no-repeat 5px 1px;
+}
+.twitter {
+	background: url("../images/icon_twitter.gif") no-repeat 5px 1px;
+}
+/*************************** start entree style ***************************/
+.entree {
+	float: left;
+	width: 305px;
+	font-size: 12px;
+	line-height: 18px;
+	margin: 4px 18px 0px 5px;
+}
+.whole {
+	min-width: 305px;
+	width: 100%;
+}
+.entree_anchor {
+	font-size: 14px;
+	line-height: 22px;
+}
+.entree p {
+	margin: 2px 0px 0px 0px;
+}
+.entree_data {
+	font-size: 11px;
+	line-height: 22px;
+	color: #999999;
+	font-style: italic;
+}
+.entree_sub {
+	font-size: 10px;
+	font-style: italic;
+	line-height: 1.4;
+}
+.entree_illustr {
+	float: left;
+	margin: 5px 10px 0 0;
+}
+.main_area .active {
+	color: #cc0000;
+}
+/*************************** end entree style ***************************/
+.participants_showcase {
+	margin: 5px 0px;
+	padding: 5px 15px 5px 15px;
+	border: 1px solid #e9e9e9;
+	background: #fcfcfc;
+}
+.participants_showcase:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.participants_showcase  .entree {
+	margin: 4px 5px 8px 5px;
+	width: 300px;
+}
+.enroll_rules li {
+	position: relative;
+	padding: 0 10px 0 20px;
+	margin: 5px 12px 5px 0px;
+}
+ .enroll_rules ol {
+	list-style: none; /* убираем дефолтные цифры */
+	counter-reset: point;
+}
+.enroll_rules  li:before {
+	content: counter(point)"." ; 
+	counter-increment: point 1; 
+	font-size: 16px; 
+	position: absolute;
+	left: 0;
+}
+.menu_item {
+	margin-left: 30px;
+}
+.enroll_menu_item:last-child {
+	margin-left: 0px;
+}
+.enroll_menu {
+	float: right;
+	margin: 8px 18px 0px 0px;
+}
+.organisers h4 {
+	margin: 0px 0px 8px 0px;
+}
+.table_top {
+	display:table;
+}
+.org_area_left {
+	border: 1px solid #e9e9e9;
+	border-right: none;
+	background: #ffffff;
+	width: 152px;
+	height: 100px;
+	margin: 13px auto 0px auto;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+.org_area_right {
+	border: 1px solid #e9e9e9;
+	border-left: none;
+	background: #ffffff;
+	width: 152px;
+	height: 100px;
+	margin: 13px auto 0px auto;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+.org_illustr {
+	display: inline-block;
+	float: left;
+	margin: 0px 3px 0px 0px;
+}
+.org_sub {
+	font-size: 11px;
+}
+.divider {
+	width: 152px;
+	height: 10px;
+	margin: 13px auto 0px auto;
+	padding: 0px 0px 0px 10px;
+}
+.table_bottom {
+	display:table;
+}
+.oper_area {
+	border: 1px solid #e9e9e9;
+	background: #ffffff;
+	width: 304px;
+	height: 100px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+.oper_illustr {
+	display: inline-block;
+	float: left;
+	margin: 0px 10px 0px 10px;
+}
+.oper_anchor {
+	font-size: 16px;
+	line-height: 22px;
+}
+/************************ partners ******************************/
+.partner_brick {
+	display: inline-block;
+	float: left;
+	font-size: 10px;
+	color: #fff;
+	text-decoration: none;	
+	width: 135px;
+	height: 100px;
+	padding: 0px 5px 0px 5px;
+	margin: 20px 9px 17px 9px;
+	text-align:  center;
+	vertical-align: bottom;
+}
+.partner_brick p{
+	margin: 70px 0px 0px 0px;
+}
+.p_eastwood_00 {
+	background: url("../images/logo_sprite.png") no-repeat 7px 5px;
+}
+.p_archistrros_00 {
+	background: url("../images/logo_sprite.png") no-repeat -159px 5px;
+}
+.p_sberbank_00 {
+	background: url("../images/logo_sprite.png") no-repeat -326px 5px;
+}
+.p_glonass_00 {
+	background: url("../images/logo_sprite.png") no-repeat -496px 5px;
+}
+.p_barkley_00 {
+	background: url("../images/logo_sprite.png") no-repeat -663px 5px;
+}
+.p_rusrep_00 {
+	background: url("../images/logo_sprite.png") no-repeat -831px 5px;
+}
+.p_profil {
+	background: url("../images/logo_sprite.png") no-repeat 7px -132px;
+}
+.p_nacbusiness_00 {
+	background: url("../images/logo_sprite.png") no-repeat -159px -132px;
+}
+.p_barkley_01 {
+	background: url("../images/logo_sprite.png") no-repeat -326px -132px;
+}
+.p_alfabank {
+	background: url("../images/logo_sprite.png") no-repeat -496px -132px;
+}
+.p_midland {
+	background: url("../images/logo_sprite.png") no-repeat -663px -132px;
+}
+.p_nacbusiness_01 {
+	background: url("../images/logo_sprite.png") no-repeat -831px -132px;
+}
+.p_eastwood_01 {
+	background: url("../images/logo_sprite.png") no-repeat 7px -272px;
+}
+.p_archistrros_01 {
+	background: url("../images/logo_sprite.png") no-repeat -159px -272px;
+}
+.p_sberbank_01 {
+	background: url("../images/logo_sprite.png") no-repeat -326px -272px;
+}
+.p_glonass_01 {
+	background: url("../images/logo_sprite.png") no-repeat -496px -272px;
+}
+.p_barkley_02 {
+	background: url("../images/logo_sprite.png") no-repeat -663px -272px;
+}
+.p_rusrep_01 {
+	background: url("../images/logo_sprite.png") no-repeat -831px -272px;
+}
+
+.partners_area {
+	background: #666666;
+	color: #ffffff;
+	padding: 0px 0px 20px 0px;
+}
+.partners  h4 {
+	font-size: 22px;
+	border-top: 1px dotted #000000;
+	border-bottom: 1px dotted #000000;
+	padding: 20px 0px 20px 5px;
+	margin: 0px 0px 0px 0px;
+}
+.x6_block {
+	float: left;
+	vertical-align: top;
+	width: 141px;
+	height: 100px;
+	margin: 7px 11px 30px 11px;
+}
+.partner_logo {
+	display: block;
+	width: 130px;
+	height: 50px;
+	margin: 11px auto 17px auto;
+}
+.partner_caption {
+	font-size: 10px;
+	text-align: center;
+}
+.eastwood_00 {
+	background: url("../images/logo_sprite.png") no-repeat 0px 5px;
+}
+.archistrros_00 {
+	background: url("../images/logo_sprite.png") no-repeat -166px 5px;
+}
+.sberbank_00 {
+	background: url("../images/logo_sprite.png") no-repeat -333px 5px;
+}
+.glonass_00 {
+	background: url("../images/logo_sprite.png") no-repeat -503px 5px;
+}
+.barkley_00 {
+	background: url("../images/logo_sprite.png") no-repeat -670px 5px;
+}
+.rusrep_00 {
+	background: url("../images/logo_sprite.png") no-repeat -838px 5px;
+}
+.profil {
+	background: url("../images/logo_sprite.png") no-repeat 0px -132px;
+}
+.nacbusiness_00 {
+	background: url("../images/logo_sprite.png") no-repeat -166px -132px;
+}
+.barkley_01 {
+	background: url("../images/logo_sprite.png") no-repeat -333px -132px;
+}
+.alfabank {
+	background: url("../images/logo_sprite.png") no-repeat -503px -132px;
+}
+.midland {
+	background: url("../images/logo_sprite.png") no-repeat -670px -132px;
+}
+.nacbusiness_01 {
+	background: url("../images/logo_sprite.png") no-repeat -838px -132px;
+}
+.eastwood_01 {
+	background: url("../images/logo_sprite.png") no-repeat 0px -272px;
+}
+.archistrros_01 {
+	background: url("../images/logo_sprite.png") no-repeat -166px -272px;
+}
+.sberbank_01 {
+	background: url("../images/logo_sprite.png") no-repeat -333px -272px;
+}
+.glonass_01 {
+	background: url("../images/logo_sprite.png") no-repeat -503px -272px;
+}
+.barkley_02 {
+	background: url("../images/logo_sprite.png") no-repeat -670px -272px;
+}
+.rusrep_01 {
+	background: url("../images/logo_sprite.png") no-repeat -838px -272px;
+}
+/************************ footer ******************************/
+.footer_area {
+	background: #ffffff;
+	border-top: 6px solid #cccccc;
+	padding: 30px 0 20px 0;
+}
+.footer_menu_item {
+	display: block;
+	color: #666666;
+	font-size: 12px;
+	text-decoration: none;
+	margin: 0px 0px 15px 0px;	
+}
+.footer_submenu_item {
+	color: #999999;
+	font-size: 11px;
+	text-decoration: none;
+}
+.footer_submenu {
+	margin: 0px 0px 0px 15px;
+}
+.footer .active {
+	color: #cc0000;
+}
+
+
+
+/************************ footer ******************************/
+.sign_area {
+	background: #ffffff;
+}
+.sign_area .main_container {
+	border-top: 1px solid #cccccc;
+	padding: 10px 0 20px 0;
+	font-size: 11px:
+}
+.copyright {
+	display: inline-block;
+	float: left;
+	margin: 10px 30px 0px 0px;
+}
+.sign  a {
+	color: #666666;
+}
+.madein {
+	display: inline-block;
+	float: right;
+	margin: 10px 0px 10px 0px;
+}
+.icon_small  {
+	width: 16px;
+	height: 16px;
+	margin: 10px 2px;
+}
+.sprite_fb {
+	background: url("../images/icons_sprite.gif") no-repeat 0px 0px;
+}
+.sprite_tw {
+	background: url("../images/icons_sprite.gif") no-repeat -22px 0px;
+}
+.sprite_vk {
+	background: url("../images/icons_sprite.gif") no-repeat -43px 0px;
+}
+.sprite_lj {
+	background: url("../images/icons_sprite.gif") no-repeat -64px 0px;
+}
